@@ -5,146 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ChaoticGuy Memecoin</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <div class="header-image-container">
-      <img src="chaotic.jpeg" alt="Chaos Mascot" class="header-image" style="width:100%; max-height:300px; object-fit:cover;">
+      <img src="chaotic.jpeg" alt="Chaos Mascot" class="header-image">
     </div>
     <h1>ChaoticGuy Memecoin</h1>
     <p>The perfect blend of chaos and creativity. Disrupting the crypto space one memecoin at a time!</p>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#chaos-theory">Chaos Theory</a>
-    <a href="#butterfly-effect">The Butterfly Effect</a>
-    <a href="#chaos-vs-randomness">Chaos vs. Randomness</a>
-    <a href="#chaos-mascot">The Chaos Mascot</a>
-    <a href="#chaos-ai">Chaos and AI</a>
-    <a href="#roadmap">Roadmap</a>
-    <a href="#how-to-buy">How to Buy</a>
-    <a href="#community">Community</a>
+    <ul class="tabs">
+      <li data-tab="about">About</li>
+      <li data-tab="chaos-theory">Chaos Theory</li>
+      <li data-tab="butterfly-effect">Butterfly Effect</li>
+      <li data-tab="chaos-vs-randomness">Chaos vs. Randomness</li>
+      <li data-tab="chaos-mascot">The Chaos Mascot</li>
+      <li data-tab="chaos-ai">Chaos and AI</li>
+      <li data-tab="roadmap">Roadmap</li>
+      <li data-tab="how-to-buy">How to Buy</li>
+      <li data-tab="community">Community</li>
+    </ul>
   </nav>
 
   <main>
-    <section id="about">
-      <h2 class="section-title">About ChaoticGuy Memecoin</h2>
+    <section id="about" class="tab-content">
+      <h2>About ChaoticGuy Memecoin</h2>
       <p>
-        ChaoticGuy Memecoin is a Solana-based cryptocurrency designed to spread fun, chaos, and innovation. 
-        Our mission is to bring the world of crypto closer to everyday users with humor, creativity, and practicality. 
+        ChaoticGuy Memecoin is a Solana-based cryptocurrency designed to spread fun, chaos, and innovation.
+        Our mission is to bring the world of crypto closer to everyday users with humor, creativity, and practicality.
         Join the movement and let’s disrupt the crypto space together, one unpredictable twist at a time!
       </p>
     </section>
 
-    <section id="chaos-theory">
-      <h2 class="section-title">What is Chaos Theory?</h2>
+    <section id="chaos-theory" class="tab-content">
+      <h2>What is Chaos Theory?</h2>
       <p>
-        At first glance, the world can seem chaotic—storms arise, traffic jams appear, opportunities come and go, and life unfolds unpredictably. 
+        At first glance, the world can seem chaotic—storms arise, traffic jams appear, opportunities come and go, and life unfolds unpredictably.
         But beneath this apparent randomness lies a profound truth: systems that seem disorderly often follow hidden patterns and simple rules.
       </p>
       <p>
-        Chaos theory isn’t about disarray or confusion—it’s about understanding the surprising order within the unpredictable. 
-        Even the most complex systems, from weather patterns to human decisions, have an underlying logic. To see it, we must start with the smallest pieces.
+        Chaos theory isn’t about disarray or confusion—it’s about understanding the surprising order within the unpredictable.
+        Even the most complex systems, from weather patterns to human decisions, have an underlying logic.
       </p>
     </section>
 
-    <section id="butterfly-effect">
-      <h2 class="section-title">How Chaos Theory Was Discovered: The Butterfly Effect</h2>
-      <p>
-        In the 1960s, Edward Lorenz, a meteorologist, was studying how to predict the weather using one of the earliest computers. 
-        His program used equations to simulate atmospheric conditions—temperature, pressure, wind speed.
-      </p>
-      <p>
-        One day, Lorenz rounded one variable in his simulation, changing 0.506127 to 0.506. It seemed trivial, but the outcome was entirely different. 
-        This small change caused wildly different weather patterns, demonstrating the profound sensitivity of chaotic systems to initial conditions.
-      </p>
+    <section id="butterfly-effect" class="tab-content">
+      <h2>How Chaos Theory Was Discovered: The Butterfly Effect</h2>
       <blockquote>
         “Does the flap of a butterfly’s wings in Brazil set off a tornado in Texas?”
       </blockquote>
       <p>
-        This became known as the butterfly effect—a poetic metaphor for how small actions can amplify into massive consequences over time.
+        This poetic metaphor from Edward Lorenz illustrates the butterfly effect—a small action that can ripple into massive consequences.
+        Lorenz’s weather simulations demonstrated how small changes in initial conditions could lead to entirely different outcomes.
       </p>
     </section>
 
-    <section id="chaos-vs-randomness">
-      <h2 class="section-title">What Makes Chaos Different From Randomness?</h2>
+    <section id="chaos-vs-randomness" class="tab-content">
+      <h2>What Makes Chaos Different From Randomness?</h2>
       <p>
-        At first, chaos might feel like randomness—but they’re profoundly different. Randomness is pure noise, like the roll of dice or static on a television screen. 
-        It has no structure, no hidden logic. Chaos, however, has boundaries. It is governed by rules that create patterns—unpredictable, yes, but not lawless.
-      </p>
-      <p>
-        Think of cream swirling in coffee. The patterns are intricate, almost hypnotic, yet they follow the physics of fluid dynamics. 
-        Chaos is this kind of structured unpredictability. A famous example is the Lorenz attractor, a visualization of a chaotic system that loops infinitely but never repeats.
+        Randomness is pure noise, like static on a television. Chaos, however, has boundaries and underlying patterns.
+        Think of cream swirling in coffee—the patterns may seem wild, but they follow the physics of fluid dynamics.
       </p>
     </section>
 
-    <section id="chaos-mascot">
-      <h2 class="section-title">The Chaos Mascot: Taz</h2>
+    <section id="chaos-mascot" class="tab-content">
+      <h2>The Chaos Mascot: Taz</h2>
       <p>
-        Chaos is not mere disorder; it is energy, motion, and the delicate dance between creation and destruction. It exists where the predictable dissolves and possibility emerges, untamed and alive.
-      </p>
-      <p>
-        Taz—the irrepressible Tasmanian Devil—is chaos made flesh. He spins, growls, and tears through landscapes, leaving everything fundamentally altered. Yet his destruction is never without purpose. Taz clears, creates, and transforms. 
-        Like chaos itself, his whirlwind represents transformation and the potential for reinvention.
+        Taz—the irrepressible Tasmanian Devil—represents chaos incarnate. His whirlwind isn’t just destruction; it clears space for reinvention.
+        Like chaos itself, Taz embodies the delicate dance between creation and destruction.
       </p>
     </section>
 
-    <section id="chaos-ai">
-      <h2 class="section-title">Chaos and Artificial Intelligence</h2>
+    <section id="chaos-ai" class="tab-content">
+      <h2>Chaos and Artificial Intelligence</h2>
       <p>
-        Chaos theory teaches us that even the smallest shifts can ripple into monumental change. Artificial intelligence thrives on this principle, amplifying minor changes into creative breakthroughs or incomprehensible anomalies.
-      </p>
-      <p>
-        AI operates on the edge of chaos and order, where adaptability and unpredictability generate innovation. Much like the butterfly effect, small tweaks in AI systems can cascade into profound outcomes. Chaos is not a flaw—it is the spark of creativity.
+        Artificial intelligence thrives on chaos, amplifying minor changes into creative breakthroughs or unexpected anomalies.
+        Like the butterfly effect, small tweaks in AI systems can ripple into monumental outcomes. Chaos isn’t a flaw—it’s a feature of innovation.
       </p>
     </section>
 
-    <section id="roadmap">
-      <h2 class="section-title">Roadmap</h2>
-      <div class="roadmap">
-        <div class="roadmap-item">
-          <h3>Phase 1: Launch</h3>
-          <p>Website, token creation, and social media launch.</p>
-        </div>
-        <div class="roadmap-item">
-          <h3>Phase 2: Community Building</h3>
-          <p>Grow our community on Twitter, Discord, and Reddit.</p>
-        </div>
-        <div class="roadmap-item">
-          <h3>Phase 3: Exchange Listings</h3>
-          <p>Get listed on popular decentralized exchanges.</p>
-        </div>
-        <div class="roadmap-item">
-          <h3>Phase 4: Expansion</h3>
-          <p>Develop NFTs, partnerships, and explore real-world use cases.</p>
-        </div>
-      </div>
+    <section id="roadmap" class="tab-content">
+      <h2>Roadmap</h2>
+      <ul>
+        <li><strong>Phase 1:</strong> Launch website, create tokens, and build social media presence.</li>
+        <li><strong>Phase 2:</strong> Grow community on Twitter, Discord, and Reddit.</li>
+        <li><strong>Phase 3:</strong> Get listed on decentralized exchanges.</li>
+        <li><strong>Phase 4:</strong> Explore NFTs and real-world use cases.</li>
+      </ul>
     </section>
 
-    <section id="how-to-buy">
-      <h2 class="section-title">How to Buy</h2>
+    <section id="how-to-buy" class="tab-content">
+      <h2>How to Buy</h2>
       <p>
         1. Install a Solana wallet like Phantom.<br>
         2. Purchase Solana (SOL) on an exchange like Binance.<br>
         3. Connect your wallet to a DEX like Raydium.<br>
         4. Swap SOL for ChaoticGuy Memecoin.<br>
-        That's all it takes to join the chaos!
+        It’s that simple!
       </p>
     </section>
 
-    <section id="community">
-      <h2 class="section-title">Join Our Community</h2>
+    <section id="community" class="tab-content">
+      <h2>Join Our Community</h2>
       <p>
-        Stay updated and join the conversation:<br>
-        <a href="https://x.com/chaoticguy_sol" target="_blank">Follow us on Twitter</a><br>
-        <a href="https://discord.com" target="_blank">Join our Discord</a>
+        Follow us on Twitter: <a href="https://x.com/chaoticguy_sol" target="_blank">@chaoticguy_sol</a><br>
+        Join our Discord: <a href="https://discord.com" target="_blank">ChaoticGuy Discord</a>
       </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2024 ChaoticGuy Memecoin | Built with ❤️ and chaos by ChaoticGuy</p>
+    <p>© 2024 ChaoticGuy Memecoin | Built with ❤️ and chaos</p>
   </footer>
 </body>
 </html>
