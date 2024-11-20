@@ -11,72 +11,51 @@ body {
   color: #ffffff;
   line-height: 1.8;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 /* Header Styling */
 header {
   text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #007bff, #00d4ff, #9f87ff);
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
   color: #fff;
-  border-bottom: 5px solid #007bff;
 }
 
 .header-image {
   width: 100%;
   max-height: 250px;
   object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  animation: scaleIn 1.5s ease forwards;
-}
-
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 20px 0 10px;
-  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(90deg, #00d4ff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 header p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: 10px;
-  color: #e0e0e0;
-  opacity: 0.9;
+  color: #f0f0f0;
+  opacity: 0.85;
 }
 
 /* Navigation Styling */
 nav {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #1e1e2f;
   padding: 15px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav .tabs {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 15px;
 }
 
 nav .tabs li {
@@ -85,76 +64,59 @@ nav .tabs li {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 25px;
-  transition: all 0.3s ease-in-out;
+  padding: 8px 15px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
 }
 
 nav .tabs li:hover {
-  background: linear-gradient(90deg, #007bff, #00d4ff);
+  background-color: #007bff;
   color: #ffffff;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 nav .tabs li.active {
-  background: linear-gradient(90deg, #00d4ff, #9f87ff);
-  color: #fff;
-  box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.5);
+  background-color: #00d4ff;
+  color: #ffffff;
 }
 
 /* Tab Content Styling */
 .tab-content {
   display: none;
-  padding: 40px;
+  padding: 30px;
   background: #1e1e2f;
-  border-radius: 15px;
-  margin: 30px auto;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 20px auto;
   max-width: 900px;
-  transition: all 0.5s ease-in-out;
 }
 
 .tab-content.active {
   display: block;
-  animation: fadeInUp 0.6s ease;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .tab-content h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: #00d4ff;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-shadow: 0px 4px 12px rgba(0, 123, 255, 0.4);
 }
 
 .tab-content p {
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #d6d6d6;
   line-height: 1.8;
 }
 
 .tab-content ul {
-  margin: 20px 0;
-  padding: 0 30px;
+  margin: 15px 0;
+  padding: 0 20px;
   list-style-type: disc;
   color: #d6d6d6;
 }
 
 .tab-content ul li {
-  margin: 12px 0;
+  margin: 10px 0;
 }
 
 /* Footer Styling */
@@ -162,22 +124,18 @@ footer {
   text-align: center;
   background-color: #1e1e2f;
   color: white;
-  padding: 30px 0;
-  margin-top: 30px;
-  border-top: 5px solid #007bff;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px 0;
+  margin-top: 20px;
 }
 
 footer p {
-  font-size: 1rem;
-  color: #b0b0b0;
+  font-size: 0.9rem;
   opacity: 0.85;
 }
 
 footer a {
   color: #00d4ff;
   text-decoration: none;
-  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -188,45 +146,29 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 2.4rem;
-  }
-
-  header p {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
 
   nav .tabs {
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
   }
 
   nav .tabs li {
     font-size: 0.9rem;
-    padding: 8px 12px;
+    padding: 6px 10px;
   }
 
   .tab-content {
-    padding: 30px;
-    margin: 20px;
-  }
-
-  .tab-content h2 {
-    font-size: 1.8rem;
-  }
-
-  footer {
     padding: 20px;
+    margin: 15px;
   }
 }
 
 @media (max-width: 480px) {
   nav .tabs li {
     font-size: 0.8rem;
-    padding: 6px 8px;
-  }
-
-  header h1 {
-    font-size: 2rem;
+    padding: 5px 8px;
   }
 
   .tab-content h2 {
