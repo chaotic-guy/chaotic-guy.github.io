@@ -1,0 +1,97 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #007bff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  main p {
+    margin-bottom: 20px;
+  }
+  
+  /* Roadmap Section */
+  .roadmap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .roadmap-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .roadmap-item h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
