@@ -109,7 +109,7 @@ footer {
 }
 
 .header-image {
-  max-width: 100%;
+  max-width: 300px;
   max-height: 300px; /* Ensure the height is constrained */
   object-fit: contain; /* Preserve the aspect ratio */
   border-radius: 10px; /* Optional: Add rounded corners */
