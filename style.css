@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #f4f7fc; /* Light blue-gray background */
+  color: #333333; /* Dark gray text for readability */
   line-height: 1.8;
   overflow-x: hidden;
 }
@@ -16,40 +16,39 @@ body {
 /* Header Styling */
 header {
   text-align: center;
-  padding: 30px 20px;
-  background: linear-gradient(135deg, #007bff, #00d4ff);
-  color: #fff;
+  padding: 40px 20px;
+  background-color: #0056b3; /* Consistent blue theme */
+  color: #ffffff;
 }
 
 .header-image {
   width: 100%;
-  max-height: 250px;
+  max-height: 200px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 header h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin: 20px 0 10px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
 }
 
 header p {
   font-size: 1.2rem;
   margin-top: 10px;
-  color: #f0f0f0;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 /* Navigation Styling */
 nav {
   display: flex;
   justify-content: center;
-  background-color: #1e1e2f;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
   padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav .tabs {
@@ -61,33 +60,31 @@ nav .tabs {
 nav .tabs li {
   cursor: pointer;
   font-size: 1rem;
-  color: #ffffff;
+  color: #0056b3;
   text-transform: uppercase;
   font-weight: bold;
   padding: 8px 15px;
-  border-radius: 15px;
+  border-radius: 20px;
   transition: all 0.3s ease;
 }
 
-nav .tabs li:hover {
-  background-color: #007bff;
+nav .tabs li:hover,
+nav .tabs li.active {
+  background-color: #0056b3;
   color: #ffffff;
   transform: scale(1.05);
-}
-
-nav .tabs li.active {
-  background-color: #00d4ff;
-  color: #ffffff;
 }
 
 /* Tab Content Styling */
 .tab-content {
   display: none;
   padding: 30px;
-  background: #1e1e2f;
+  background-color: #ffffff;
   border-radius: 10px;
   margin: 20px auto;
   max-width: 900px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .tab-content.active {
@@ -97,22 +94,23 @@ nav .tabs li.active {
 .tab-content h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #00d4ff;
-  text-transform: uppercase;
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
 }
 
 .tab-content p {
   margin-bottom: 20px;
   font-size: 1.1rem;
-  color: #d6d6d6;
-  line-height: 1.8;
+  color: #333333;
+  line-height: 1.6;
 }
 
 .tab-content ul {
   margin: 15px 0;
   padding: 0 20px;
   list-style-type: disc;
-  color: #d6d6d6;
+  color: #333333;
 }
 
 .tab-content ul li {
@@ -122,25 +120,24 @@ nav .tabs li.active {
 /* Footer Styling */
 footer {
   text-align: center;
-  background-color: #1e1e2f;
-  color: white;
+  background-color: #0056b3;
+  color: #ffffff;
   padding: 20px 0;
   margin-top: 20px;
 }
 
 footer p {
   font-size: 0.9rem;
-  opacity: 0.85;
 }
 
 footer a {
-  color: #00d4ff;
-  text-decoration: none;
+  color: #ffffff;
+  text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #007bff;
+  color: #ffcc00;
 }
 
 /* Responsive Design */
@@ -163,12 +160,24 @@ footer a:hover {
     padding: 20px;
     margin: 15px;
   }
+
+  .tab-content h2 {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 480px) {
   nav .tabs li {
     font-size: 0.8rem;
     padding: 5px 8px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
   }
 
   .tab-content h2 {
